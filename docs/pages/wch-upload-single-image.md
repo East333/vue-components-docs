@@ -1,6 +1,6 @@
 # 上传单张图片
 
-## 参数
+## 参数 `Attributes`
 参数|说明|数据格式|可选值|默认值
 ---|---|---|---|---|
 action|上传接口|String|-|/api/storage/image_file_models/
@@ -10,7 +10,11 @@ height|组件高度|String|-|178px
 width|组件宽度|String|-|178px
 uploadName|上传的字段名|String|-|uri
 
-## 使用样例
+## 事件 `Events`
+事件名称|说明|回调参数
+---|---|---|
+on-success|上传成功|response
+## 样例
 ```Vue
 <template>
     <wch-upload-single-image 

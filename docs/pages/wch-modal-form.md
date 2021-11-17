@@ -1,5 +1,5 @@
 # 弹窗表单
-## 参数
+## 参数 `Attributes`
 参数|说明|数据格式|可选值|默认值
 ---|---|---|---|---|
 modalTitle|弹窗标题|String|-|新增数据、更新数据
@@ -14,13 +14,13 @@ formRules|表单验证规则|Object|-|{}
 formLabelWidth|表单label的宽度|String|-|-
 formLoadingText|表单loading的文字|String|-|正在加载数据...
 updateForm|表单更新时的更新内容,null为创建模式，非null为更新模式|Object、null|-|null
-### config数据格式
+### `config`数据格式
 参数|说明|数据格式|可选值|默认值
 ---|---|---|---|---|
 title|自定义字段名称|String|-|非必传
 field|自定义字段键值|String|-|非必传
 <a href="#cuForm数据格式">cuForm</a>|创建更新配置|Object|见下文|-
-#### cuForm数据格式
+#### `cuForm`数据格式
 参数|说明|数据格式|可选值|默认值
 ---|---|---|---|---|
 title|自定义字段名称|String|-|非必传
@@ -40,7 +40,12 @@ format|时间选择器的显示格式化|String|-|yyyy-MM-dd, yyyy-MM-dd HH:mm:s
 valueFormat|时间选择器的数据格式化|String|-|yyyy-MM-dd, yyyy-MM-dd HH:mm:ss, yyyy, yyyy-MM-dd
 elColSpan|item占本行多少|Number|-|24
 
-## 使用样例
+## 事件 `Events`
+事件名称|说明|回调参数
+---|---|---|
+on-submit|提交|postForm, function(取消loading)
+
+## 样例
 ```Vue
 <template>
     <modal-form
@@ -66,9 +71,9 @@ export default {
     methods: {
         onSubmit(pF, cb) {
             if (this.updateForm) { // 更新
-
+                this.visible = false
             } else { // 创建
-
+                this.visible = false
             }
         }
     }
