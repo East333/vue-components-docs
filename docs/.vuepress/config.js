@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/vue-components-docs/',
     title: "@qducc/vue-components",
     description: "描述",
     head: [
