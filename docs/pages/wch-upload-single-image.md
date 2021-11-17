@@ -1,6 +1,6 @@
 # 上传单张图片
 
-## 参数 `Attributes`
+## 参数 `Props`
 参数|说明|数据格式|可选值|默认值
 ---|---|---|---|---|
 action|上传接口|String|-|/api/storage/image_file_models/
