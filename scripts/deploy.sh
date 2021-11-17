@@ -16,4 +16,4 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f https://github.com/East333/vue-components-docs.git pages
+git push -f git@github.com:East333/vue-components-docs.git pages
