@@ -15,7 +15,11 @@ formLabelWidth|表单label的宽度|String|-|-
 formLoadingText|表单loading的文字|String|-|正在加载数据...
 updateForm|表单更新时的更新内容,null为创建模式，非null为更新模式|Object、null|-|null
 submitConfirmMessage|提交时的确认信息，支持html|String|-|
-
+createFunc|发送创建请求的函数，传入本属性会忽略on-submit事件|Function|-|
+createdNotifyMessage|创建成功的提示文字|String|-|创建成功
+updateFunc|发送更新请求的函数，传入本属性会忽略on-submit事件|Function|-|
+updatedNotifyMessage|更新成功的提示文字|String|-|更新成功
+lookupField|后端查详情字段|String|-|uuid
 ### `config`数据格式
 参数|说明|数据格式|可选值|默认值
 ---|---|---|---|---|
@@ -46,7 +50,7 @@ elColSpan|item占本行多少|Number|-|24
 事件名称|说明|回调参数
 ---|---|---|
 on-submit|提交|postForm, function(取消loading)
-
+submit-success|提交成功，仅当传入createFunc或者updateFunc时有效|response
 ## 样例
 ```Vue
 <template>
