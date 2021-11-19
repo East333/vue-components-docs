@@ -14,6 +14,7 @@ formRules|表单验证规则|Object|-|{}
 formLabelWidth|表单label的宽度|String|-|-
 formLoadingText|表单loading的文字|String|-|正在加载数据...
 updateForm|表单更新时的更新内容,null为创建模式，非null为更新模式|Object、null|-|null
+
 ### `config`数据格式
 参数|说明|数据格式|可选值|默认值
 ---|---|---|---|---|

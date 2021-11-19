@@ -1,5 +1,5 @@
 module.exports = {
-    base: '/vue-components-docs/',
+    // base: '/vue-components-docs/',
     title: "@qducc/vue-components",
     description: "描述",
     head: [
@@ -18,7 +18,8 @@ module.exports = {
         sidebar: [
             'pages/install',
             'pages/wch-modal-form',
-            'pages/wch-upload-single-image'
+            'pages/wch-upload-single-image',
+            'pages/wch-excel-import-auto'
         ],
         nav: [
             {
