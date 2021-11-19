@@ -1,5 +1,5 @@
 module.exports = {
-    // base: '/vue-components-docs/',
+    base: process.env.NODE_ENV === 'development' ? '' : '/vue-components-docs/',
     title: "@qducc/vue-components",
     description: "描述",
     head: [
@@ -19,7 +19,7 @@ module.exports = {
             'pages/install',
             'pages/wch-modal-form',
             'pages/wch-upload-single-image',
-            'pages/wch-excel-import-auto'
+            // 'pages/wch-excel-import-auto'
         ],
         nav: [
             {
