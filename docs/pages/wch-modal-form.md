@@ -33,7 +33,7 @@ title|自定义字段名称|String|-|非必传
 field|自定义字段键值|String|-|非必传
 default|默认值|-|-|空字符串
 required|是否必填|Boolean|-|false
-type|表单的的类型|String|select|必传
+type|表单的的类型|String|select,date,datetime,year,month,number|默认为input输入字符串
 dict|type为select时有效，选择框使用dict生成选项|Object|-|非必传
 width|form-item的宽度|String|-|100%
 updateDisabled|更新时禁用|Boolean|-|-
