@@ -8,6 +8,7 @@ modalWidth|弹窗宽度|String|-|500px
 modalTop|弹窗距离页面顶部距离|String|-|10vh
 modalCloseOnClickModal|是否可以通过点击modal关闭Dialog|Boolean|-|true
 <a href="#config数据格式">config</a> |表单配置项|Array|见下文|[]
+configKey|表单里详细配置项的键名|String|-|cuForm
 elRowGutter|表单项之间的距离|Number|-|10
 elColSpan|表单项占一行的多少，满行为24|Number|1~24|24
 formRules|表单验证规则|Object|-|{}
@@ -20,6 +21,7 @@ createdNotifyMessage|创建成功的提示文字|String|-|创建成功
 updateFunc|发送更新请求的函数，传入本属性会忽略on-submit事件|Function|-|
 updatedNotifyMessage|更新成功的提示文字|String|-|更新成功
 lookupField|后端查详情字段|String|-|uuid
+submitNeedConfirm|提交是否要确认|Boolean|-|true
 ### `config`数据格式
 参数|说明|数据格式|可选值|默认值
 ---|---|---|---|---|
