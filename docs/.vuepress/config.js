@@ -31,5 +31,6 @@ module.exports = {
                 link: "https://www.npmjs.com/package/@qducc/vue-components"
             },
         ]
-    }
+    },
+    plugins: ['fulltext-search'],
 }
