@@ -22,6 +22,7 @@ updateFunc|发送更新请求的函数，传入本属性会忽略on-submit事件
 updatedNotifyMessage|更新成功的提示文字|String|-|更新成功
 lookupField|后端查详情字段|String|-|uuid
 submitNeedConfirm|提交是否要确认|Boolean|-|true
+generateForm|在submit前对postForm进行处理|Function|-|(form) => {}
 ### `config`数据格式
 参数|说明|数据格式|可选值|默认值
 ---|---|---|---|---|
@@ -51,7 +52,7 @@ elColSpan|item占本行多少|Number|-|24
 ## 事件 `Events`
 事件名称|说明|回调参数
 ---|---|---|
-on-submit|提交|postForm, function(取消loading)
+on-submit|提交|postForm, function(取消loading)，当传入createFunc或者updateFunc时会在对应情况下失效
 submit-success|提交成功，仅当传入createFunc或者updateFunc时有效|response
 ## 样例
 ```Vue
