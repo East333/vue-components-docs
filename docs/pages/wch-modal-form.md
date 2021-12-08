@@ -38,13 +38,14 @@ default|默认值|-|-|空字符串
 required|是否必填|Boolean|-|false
 type|表单的的类型|String|select,date,datetime,year,month,number|默认为input输入字符串
 dict|type为select时有效，选择框使用dict生成选项|Object|-|非必传
+options|type为select时有效|Array|-|非必传
+optionsProps|type为select时有效，options的自定义配置|Object|-|{value: 'value',label: 'label'}
 width|form-item的宽度|String|-|100%
 updateDisabled|更新时禁用|Boolean|-|-
 createDisabled|创建时禁用|Boolean|-|-
 clearable|是否可清除|Boolean|-|true
 extraBind|额外参数|Object|-|-
 itemBind|elFormItem的额外参数|Object|-|-
-optionsProps|type为select时有效，options的自定义配置|Object|-|{value: 'value',label: 'label'}
 format|时间选择器的显示格式化|String|-|yyyy-MM-dd, yyyy-MM-dd HH:mm:ss, yyyy, yyyy-MM
 valueFormat|时间选择器的数据格式化|String|-|yyyy-MM-dd, yyyy-MM-dd HH:mm:ss, yyyy, yyyy-MM-dd
 elColSpan|item占本行多少|Number|-|24
