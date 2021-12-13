@@ -53,7 +53,7 @@ elColSpan|item占本行多少|Number|-|24
 ## 事件 `Events`
 事件名称|说明|回调参数
 ---|---|---|
-on-submit|提交|postForm, function(取消loading)，当传入createFunc或者updateFunc时会在对应情况下失效
+on-submit|提交 postForm, (visiblie=false) => loading=false visible=visiblie|postForm, function(取消loading)，当传入createFunc或者updateFunc时会在对应情况下失效
 submit-success|提交成功，仅当传入createFunc或者updateFunc时有效|response
 ## 样例
 ```Vue
